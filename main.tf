@@ -1,12 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "3.74.0"
-    }
-  }
-}
-
 variable "awsprops" {
     
     default = {
@@ -23,6 +14,8 @@ variable "awsprops" {
 
 provider "aws" {
   region = lookup(var.awsprops, "region")
+  access_key = "AKIASJARONS2RCTELGKB"
+  secret_key = "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"
 }
 
 resource "aws_security_group" "project-iac-sg" {
