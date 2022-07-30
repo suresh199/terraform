@@ -4,7 +4,7 @@ variable "awsprops" {
     region = "us-east-1"
     vpc = "vpc-0b56d3938f9d860fc"
     ami = "ami-0cff7528ff583bf9a"
-    itype = "t2.micro"
+    itype = "t2.small"
     subnet = "subnet-0492c92dc213af1cd"
     publicip = true
     keyname = "nv"
