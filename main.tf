@@ -2,12 +2,12 @@ variable "awsprops" {
     
     default = {
     region = "us-east-1"
-    vpc = "vpc-09dfb84f657f6aa4a"
+    vpc = "vpc-0b56d3938f9d860fc"
     ami = "ami-0cff7528ff583bf9a"
     itype = "t2.micro"
-    subnet = "subnet-04341b34dda66e9b8"
+    subnet = "subnet-0492c92dc213af1cd"
     publicip = true
-    keyname = "suresh"
+    keyname = "nv"
     secgroupname = "TestingSecurityGroup"
   }
 }
@@ -65,7 +65,7 @@ vpc_security_group_ids = [
     volume_type = "gp2"
   }
   tags = {
-    Name ="SERVER02"
+    Name ="TerraFormLaunch"
     Environment = "DEV"
     OS = "UBUNTU"
     Managed = "IAC"
